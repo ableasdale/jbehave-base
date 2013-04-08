@@ -35,7 +35,8 @@
                     <includes>
                         <include>**/SimpleJBehaveRunner.*</include>
                     </includes>
-                    <excludes/>
+                    <ignoreFailureInStories>true</ignoreFailureInStories>
+                    <ignoreFailureInView>true</ignoreFailureInView>
                 </configuration>
             </plugin>
         </plugins>
