@@ -43,7 +43,7 @@
             </plugins>
         </pluginManagement>
 
-        <plugins>
+        <!-- plugins>
             <plugin>
                 <groupId>org.jbehave</groupId>
                 <artifactId>jbehave-maven-plugin</artifactId>
@@ -65,6 +65,6 @@
                     </execution>
                 </executions>
             </plugin>
-        </plugins>
+        </plugins -->
     </build>
 </project>
