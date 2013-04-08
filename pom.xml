@@ -31,17 +31,12 @@
                 <groupId>org.jbehave</groupId>
                 <artifactId>jbehave-maven-plugin</artifactId>
                 <version>3.7.5</version>
-                <executions>
-                    <execution>
-                        <phase>integration-test</phase>
-                        <configuration>
-                            <includes>
-                                <include>**/SimpleJBehaveRunner</include>
-                            </includes>
-                            <excludes />
-                        </configuration>
-                    </execution>
-                </executions>
+                <configuration>
+                    <includes>
+                        <include>**/SimpleJBehaveRunner.*</include>
+                    </includes>
+                    <excludes/>
+                </configuration>
             </plugin>
         </plugins>
     </build>
