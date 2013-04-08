@@ -24,6 +24,11 @@
             <artifactId>jbehave-junit-runner</artifactId>
             <version>1.0.1</version>
         </dependency>
+        <dependency>
+            <groupId>org.jbehave</groupId>
+            <artifactId>jbehave-maven-plugin</artifactId>
+            <version>3.7.5</version>
+        </dependency>
     </dependencies>
 
 </project>
