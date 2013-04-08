@@ -1,4 +1,7 @@
+package com.xmlmachines;
+
 import com.thoughtworks.paranamer.NullParanamer;
+import com.xmlmachines.SampleSteps;
 import de.codecentric.jbehave.junit.monitoring.JUnitReportingRunner;
 import org.jbehave.core.configuration.Configuration;
 import org.jbehave.core.embedder.EmbedderControls;

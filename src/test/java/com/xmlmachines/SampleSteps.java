@@ -1,3 +1,5 @@
+package com.xmlmachines;
+
 import org.jbehave.core.annotations.Given;
 import org.jbehave.core.annotations.Named;
 import org.jbehave.core.annotations.Then;
