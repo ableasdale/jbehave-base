@@ -30,16 +30,7 @@
         </dependency>
     </dependencies>
 
-
     <build>
-        <!-- testResources>
-            <testResource>
-                <directory>src/test/resources</directory>
-                <includes>
-                    <include>**/*.story</include>
-                </includes>
-            </testResource>
-        </testResources -->
         <plugins>
             <plugin>
                 <groupId>org.jbehave</groupId>
