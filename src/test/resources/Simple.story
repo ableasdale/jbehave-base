@@ -18,4 +18,4 @@ Scenario: 3 squared
 
 Given a variable x with value 3
 When I multiply x by 3
-Then x should equal 10
+Then x should equal 9

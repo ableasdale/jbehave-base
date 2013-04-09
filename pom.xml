@@ -38,6 +38,9 @@
                         <includes>
                             <include>**/SimpleJBehaveRunner*.java</include>
                         </includes>
+                        <excludes>
+                            <exclude>**/*.story</exclude>
+                        </excludes>
                     </configuration>
                 </plugin>
             </plugins>

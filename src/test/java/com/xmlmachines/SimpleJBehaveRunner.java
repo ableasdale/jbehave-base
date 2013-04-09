@@ -4,7 +4,6 @@ import com.thoughtworks.paranamer.NullParanamer;
 
 import de.codecentric.jbehave.junit.monitoring.JUnitReportingRunner;
 import org.jbehave.core.configuration.Configuration;
-import org.jbehave.core.embedder.EmbedderControls;
 import org.jbehave.core.embedder.StoryControls;
 import org.jbehave.core.failures.PassingUponPendingStep;
 import org.jbehave.core.failures.RethrowingFailure;
@@ -62,6 +61,8 @@ public class SimpleJBehaveRunner extends JUnitStories {
         configuration.useStoryReporterBuilder(new StoryReporterBuilder());
         configuration.useViewGenerator(new FreemarkerViewGenerator());
 
+        JUnitReportingRunner.recommandedControls(configuredEmbedder());
+        /*
         EmbedderControls embedderControls = configuredEmbedder()
                 .embedderControls();
         embedderControls.doBatch(false);
@@ -72,7 +73,7 @@ public class SimpleJBehaveRunner extends JUnitStories {
         embedderControls.doVerboseFailures(false);
         embedderControls.doVerboseFiltering(false);
         embedderControls.useStoryTimeoutInSecs(300);
-        embedderControls.useThreads(1);
+        embedderControls.useThreads(1); */
     }
 
     @Override
