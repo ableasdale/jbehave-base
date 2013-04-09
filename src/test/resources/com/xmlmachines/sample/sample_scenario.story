@@ -5,9 +5,9 @@ Meta:
 @color blue
 
 Narrative:
-    As a mathematician
-    I want to do some sums
-    In order to make JBehave work
+As a mathematician
+I want to do some sums
+In order to make JBehave work
 
 Scenario: 2 squared
 Given a variable x with value 2

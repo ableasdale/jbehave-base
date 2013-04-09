@@ -1,4 +1,4 @@
-package com.xmlmachines;
+package com.xmlmachines.sample;
 
 import org.jbehave.core.annotations.Given;
 import org.jbehave.core.annotations.Named;
@@ -6,13 +6,6 @@ import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
 import org.jbehave.core.steps.Steps;
 
-/**
- * Created with IntelliJ IDEA.
- * User: alexbleasdale
- * Date: 07/04/2013
- * Time: 10:26
- * To change this template use File | Settings | File Templates.
- */
 public class SampleSteps extends Steps {
 
     int x;

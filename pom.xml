@@ -32,14 +32,14 @@
 
 
     <build>
-        <testResources>
+        <!-- testResources>
             <testResource>
                 <directory>src/test/resources</directory>
                 <includes>
                     <include>**/*.story</include>
                 </includes>
             </testResource>
-        </testResources>
+        </testResources -->
         <plugins>
             <plugin>
                 <groupId>org.jbehave</groupId>
@@ -51,7 +51,7 @@
                         <phase>integration-test</phase>
                         <configuration>
                             <includes>
-                                <include>**/DummyScenario*.java</include>
+                                <include>**/SampleScenario*.java</include>
                             </includes>
                             <scope>test</scope>
                             <ignoreFailureInStories>true</ignoreFailureInStories>
@@ -65,6 +65,4 @@
             </plugin>
         </plugins>
     </build>
-
-
 </project>
