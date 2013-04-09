@@ -1,7 +1,7 @@
 package com.xmlmachines;
 
 import com.thoughtworks.paranamer.NullParanamer;
-import com.xmlmachines.SampleSteps;
+
 import de.codecentric.jbehave.junit.monitoring.JUnitReportingRunner;
 import org.jbehave.core.configuration.Configuration;
 import org.jbehave.core.embedder.EmbedderControls;
@@ -38,7 +38,7 @@ public class SimpleJBehaveRunner extends JUnitStories {
         // configuration.doDryRun(false); "no dry run" is implicit by using
         // default StoryControls
 
-        // configuration.useDefaultStoryReporter(new ConsoleOutput());
+        /// configuration.useDefaultStoryReporter(new ConsoleOutput());
         // deprecated -- rather use StoryReportBuilder
 
         configuration.useFailureStrategy(new RethrowingFailure());
