@@ -39,7 +39,7 @@ public class SimpleJBehaveRunner extends JUnitStories {
 
         /// configuration.useDefaultStoryReporter(new ConsoleOutput());
         // deprecated -- rather use StoryReportBuilder
-
+           /*
         configuration.useFailureStrategy(new RethrowingFailure());
         configuration.useKeywords(new LocalizedKeywords(Locale.ENGLISH));
         configuration.usePathCalculator(new AbsolutePathCalculator());
@@ -60,7 +60,7 @@ public class SimpleJBehaveRunner extends JUnitStories {
         configuration.useStoryPathResolver(new UnderscoredCamelCaseResolver());
         configuration.useStoryReporterBuilder(new StoryReporterBuilder());
         configuration.useViewGenerator(new FreemarkerViewGenerator());
-
+             */
         JUnitReportingRunner.recommandedControls(configuredEmbedder());
         /*
         EmbedderControls embedderControls = configuredEmbedder()
