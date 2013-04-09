@@ -51,7 +51,7 @@
                         <phase>integration-test</phase>
                         <configuration>
                             <includes>
-                                <include>**/SimpleJBehaveRunner*.java</include>
+                                <include>**/DummyScenario*.java</include>
                             </includes>
                             <scope>test</scope>
                             <ignoreFailureInStories>true</ignoreFailureInStories>
