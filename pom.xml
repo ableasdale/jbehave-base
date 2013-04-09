@@ -50,7 +50,101 @@
             </plugins>
         </pluginManagement -->
 
+
+        <!--
+            <pluginExecution>
+                  <pluginExecutionFilter>
+                    <groupId>org.jbehave</groupId>
+                    <artifactId>jbehave-maven-plugin</artifactId>
+                    <versionRange>[${jbehave.core.version},)</versionRange>
+                    <goals>
+                      <goal>unpack-view-resources</goal>
+                    </goals>
+                  </pluginExecutionFilter>
+                  <action>
+                    <ignore></ignore>
+                  </action>
+                </pluginExecution>
+
+        -->
+
+
         <plugins>
+            <plugin>
+                <groupId>org.jbehave</groupId>
+                <artifactId>jbehave-maven-plugin</artifactId>
+                <version>3.7.5</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>com.thoughtworks.xstream</groupId>
+                        <artifactId>xstream</artifactId>
+                        <version>1.3.1</version>
+                    </dependency>
+                </dependencies>
+                <executions>
+            <execution>
+                <id>unpack-view-resources</id>
+                <phase>process-resources</phase>
+                <goals>
+                    <goal>unpack-view-resources</goal>
+                </goals>
+            </execution>
+            <execution>
+                <id>embeddable-stories</id>
+                <phase>integration-test</phase>
+                <configuration>
+                    <includes>
+                        <include>**/SimpleJBehaveRunner*.java</include>
+                    </includes>
+                    <excludes />
+                    <generateViewAfterStories>true</generateViewAfterStories>
+                    <ignoreFailureInStories>true</ignoreFailureInStories>
+                    <ignoreFailureInView>false</ignoreFailureInView>
+                    <threads>1</threads>
+                    <skip>false</skip>
+                    <storyTimeoutInSecs>60</storyTimeoutInSecs>
+                    <metaFilters>
+                        <metaFilter></metaFilter>
+                    </metaFilters>
+                </configuration>
+                <goals>
+                    <goal>run-stories-as-embeddables</goal>
+                </goals>
+            </execution>
+            <execution>
+                <id>map-stories</id>
+                <phase>integration-test</phase>
+                <configuration>
+                    <includes>
+                        <include>**/SimpleJBehaveRunner*.java</include>
+                    </includes>
+                    <metaFilters>
+                        <metaFilter>+category *</metaFilter>
+                        <metaFilter>+color *</metaFilter>
+                    </metaFilters>
+                </configuration>
+                <goals>
+                    <goal>map-stories-as-embeddables</goal>
+                </goals>
+            </execution>
+            <execution>
+                <id>report-stepdocs</id>
+                <phase>integration-test</phase>
+                <configuration>
+                    <includes>
+                        <include>**/SimpleJBehaveRunner*.java</include>
+                    </includes>
+                </configuration>
+                <goals>
+                    <goal>report-stepdocs-as-embeddables</goal>
+                </goals>
+            </execution>
+        </executions>
+    </plugin>
+
+             <!--
+
+
             <plugin>
                 <groupId>org.jbehave</groupId>
                 <artifactId>jbehave-maven-plugin</artifactId>
@@ -63,15 +157,14 @@
                             <includes>
                                 <include>**/SimpleJBehaveRunner*.java</include>
                             </includes>
-                            <ignoreFailureInStories>true</ignoreFailureInStories>
-                            <ignoreFailureInView>true</ignoreFailureInView>
+
                         </configuration>
                         <goals>
                             <goal>run-stories-as-embeddables</goal>
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin> -->
         </plugins>
     </build>
 </project>
