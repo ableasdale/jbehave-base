@@ -37,4 +37,9 @@ public class DummyScenario extends JUnitStory {
     }
 
 
+    protected List<String> storyPath() {
+        return Arrays.asList("Simple.story");
+    }
+
+
 }
