@@ -1,5 +1,6 @@
 package com.xmlmachines;
 
+import de.codecentric.jbehave.junit.monitoring.JUnitReportingRunner;
 import org.jbehave.core.io.LoadFromClasspath;
 import org.jbehave.core.junit.JUnitStory;
 import org.jbehave.core.configuration.Configuration;
@@ -7,6 +8,7 @@ import org.jbehave.core.configuration.MostUsefulConfiguration;
 import org.jbehave.core.reporters.StoryReporterBuilder;
 import org.jbehave.core.steps.InjectableStepsFactory;
 import org.jbehave.core.steps.InstanceStepsFactory;
+import org.junit.runner.RunWith;
 
 import java.util.Arrays;
 import java.util.List;
@@ -18,6 +20,7 @@ import java.util.List;
  * Time: 13:26
  * To change this template use File | Settings | File Templates.
  */
+@RunWith(JUnitReportingRunner.class)
 public class DummyScenario extends JUnitStory {
 
     // Here we specify the configuration, starting from default MostUsefulConfiguration, and changing only what is needed
@@ -35,11 +38,5 @@ public class DummyScenario extends JUnitStory {
     public InjectableStepsFactory stepsFactory() {
         return new InstanceStepsFactory(configuration(), new SampleSteps());
     }
-
-
-    protected List<String> storyPath() {
-        return Arrays.asList("Simple.story");
-    }
-
 
 }
