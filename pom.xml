@@ -42,7 +42,7 @@
                         <phase>integration-test</phase>
                         <configuration>
                             <includes>
-                                <include>**/SampleScenario*.java</include>
+                                <include>**/*Scenario*.java</include>
                             </includes>
                             <scope>test</scope>
                             <ignoreFailureInStories>true</ignoreFailureInStories>
