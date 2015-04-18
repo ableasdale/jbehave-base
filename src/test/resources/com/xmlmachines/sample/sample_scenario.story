@@ -1,9 +1,3 @@
-This is a story about maths
-
-Meta:
-@category basic
-@color blue
-
 Narrative:
 As a mathematician
 I want to do some sums
