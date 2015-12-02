@@ -1,5 +1,6 @@
-JBehave Base Application
-========================
+[![Build Status](https://travis-ci.org/ableasdale/jbehave-base.svg)](https://travis-ci.org/ableasdale/jbehave-base)
+
+###JBehave Base Application###
 
 Simple JBehave / Maven application
 
